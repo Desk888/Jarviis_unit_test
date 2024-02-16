@@ -1,6 +1,9 @@
 import os
 import logging
 import pickle
+import unittest
+import shutil
+
 def setup_directories(self):
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -101,4 +104,5 @@ def setup_pickle_files(self):
         create_pickle_file(cache_path, 'last_buy.pickle', currencies[currency]['buy'])
         create_pickle_file(cache_path, 'access.pickle', currencies[currency]['acc'])
    
-#    ! UNIT TESTS STARTS FROM HERE !
+#    UNIT TEST DEVE ESSERE FATTA SU UN FILE SEPARATO COME BEST PRACTICE PERCHE' MI DA
+#    PROBLEMI VARI E CONFLITTI VARI CON IL FILE PRINCIPALE
