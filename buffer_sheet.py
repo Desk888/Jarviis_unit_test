@@ -101,3 +101,4 @@ def setup_pickle_files(self):
         create_pickle_file(cache_path, 'last_buy.pickle', currencies[currency]['buy'])
         create_pickle_file(cache_path, 'access.pickle', currencies[currency]['acc'])
    
+#    ! UNIT TESTS STARTS FROM HERE !
